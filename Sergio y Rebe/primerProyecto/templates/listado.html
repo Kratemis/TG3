@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+
+
+
+	<div class="container">
+		<div class="row">
+			<ul>
+				{% for Cafe in listado_cafe %}
+    				<li>{{ Cafe.Nombre }}</li>
+    				<li>{{ Cafe.Stock }}</li>
+    				<li>{{ Cafe.Descripcion }}</li>
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
